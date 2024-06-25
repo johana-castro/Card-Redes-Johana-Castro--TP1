@@ -1,0 +1,171 @@
+
+body, html {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+
+
+.seccion{
+    padding: 10px 25px;
+    background-color: rgb(36, 36, 36);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.seccion2{
+    width: 95%;
+}
+
+
+img{
+    border-radius: 50%;
+    padding: 7px;
+    width: 100px;
+    height: 100px;
+    border: 4px solid  rgb(140, 14, 28);
+    transition: opacity 0.3s ease, transform 0.8s ease;
+}
+
+img:hover {
+    content: url('img/perfil2.jpg');
+    opacity: 0.7;
+    transform: rotate(360deg);
+}
+
+
+a{
+    height: 20px;
+    background-color: rgb(9, 0, 0);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 8px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+
+a:hover {
+    background-color: rgb(140, 14, 28);
+    transform: translateY(-5px);
+}
+
+
+p{
+    font-size: small;
+}
+
+h1{
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+
+h1:hover {
+    transform: scale(1.3);
+}
+
+
+.direccion{
+    margin: 5px;
+    color: rgb(244, 46, 46);
+}
+ 
+
+
+.actividad{
+    margin-top: 30px;
+    margin-bottom: 20px; 
+    transition: transform 0.3s ease;
+}
+
+   
+.actividad:hover {
+    transform: scale(1.1);
+}
+
+
+
+ @media (max-width: 768px) {
+    .seccion {
+        padding: 5px;
+        
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+    .actividad{
+        margin-top: 40px;
+    }
+    h1{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .seccion {
+        padding: 5px;
+    }
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .actividad{
+        margin-top: 40px;
+    
+        
+    }
+}
+
+@media (min-width: 1200px) {
+    .seccion {
+        max-width: 800px; 
+         height: auto;  
+         padding: 20px 40px; 
+    }
+
+    img {
+        width: 150px; 
+        height: 150px;
+    }
+
+    a {
+        font-size: 1.2em; 
+        padding: 15px; 
+    }
+
+    h1 {
+        font-size: 3em; 
+    }
+     p{
+        font-size:1.5em ;
+     }
+} 
